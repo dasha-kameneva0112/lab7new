@@ -11,8 +11,8 @@ def generate_example():
         max_num = 50 # commit 6
     else: # commit 6
         max_num = 20 # commit 6
-    a = random.randint(1, max_num)  # commit 6
-    b = random.randint(1, max_num)  # commit 6
+    a = random.randint(5, max_num)  # commit 6, commit 10
+    b = random.randint(0, max_num)  # commit 6, commit 10
     op = random.choice(['+', '-', '*'])
     
     if op == '+':
