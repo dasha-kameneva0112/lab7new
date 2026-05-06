@@ -1,10 +1,18 @@
 import random
 
 total_attempts = 0  # commit 1
+difficulty = "medium"  # commit 6: easy/medium/hard
 
 def generate_example():
-    a = random.randint(1, 20)
-    b = random.randint(1, 20)
+    global difficulty # commit 6
+    if difficulty == "easy": # commit 6
+        max_num = 10 # commit 6
+    elif difficulty == "hard": # commit 6
+        max_num = 50 # commit 6
+    else: # commit 6
+        max_num = 20 # commit 6
+    a = random.randint(1, max_num)  # commit 6
+    b = random.randint(1, max_num)  # commit 6
     op = random.choice(['+', '-', '*'])
     
     if op == '+':
